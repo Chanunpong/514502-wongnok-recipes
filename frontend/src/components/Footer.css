@@ -1,0 +1,28 @@
+footer {
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 14px;         
+  text-align: left;        
+  border-top: 1px solid #ddd;
+}
+
+footer .title {
+  color: orange;           
+  font-size: 18px;         
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 12px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  footer .title {
+    font-size: 16px;
+  }
+}
