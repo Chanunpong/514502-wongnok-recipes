@@ -1,0 +1,160 @@
+body {
+  font-family: 'Athiti', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffefc;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  height: 47px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.search-bar button {
+  padding: 8px 20px;
+  background: none;
+  border: 1.5px solid #55efc4;
+  border-radius: 20px;
+  color: #55efc4;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #55efc4;
+  color: white;
+}
+
+.login-button {
+  padding: 8px 16px;
+  background-color: #e17055;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #d35400;
+}
+
+.user-menu span {
+  border: 1px solid #00eb0c;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.auth-container {
+  width: 320px;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+  .header {
+    gap: 20px;
+    padding: 0 10px;
+    height: 60px;
+  }
+
+  .search-bar input {
+    width: 200px;
+  }
+
+  .login-button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+    padding: 10px 15px;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .search-bar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-bar input {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .search-bar button {
+    padding: 8px 12px;
+  }
+
+  .login-button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+
+  .user-menu span {
+    font-size: 0.9em;
+    padding: 3px 6px;
+  }
+}
